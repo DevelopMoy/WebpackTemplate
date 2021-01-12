@@ -1,0 +1,7 @@
+/* ESTILOS INDIVIDUALES PARA COMPONENTES DE JS, WEBPACK NO LOS EXPORTA COMO ARCHIVOS SEPARADOS, SI NO, QUE LO AÑADE A CADA .JS*/
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 32px;
+}
