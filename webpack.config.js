@@ -51,11 +51,14 @@ module.exports ={
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebPackPlugin({ // NOS PERMITE EXPORTAR EL ARCHIVO HTML
-            template: './src/indexDev.html',
+        new HtmlWebPackPlugin(
+            {template: "./src/index.html"}
+            /*{ // NOS PERMITE EXPORTAR EL ARCHIVO HTML
+
+            template: './src/index.html',
             filename: "./index.html",
             inject: "body"
-        }),
+        }*/),
         new extractMiniCss({
             filename: '[name].css', // NOMBRE DEL ARCHIVO EN PRODUCCION
             ignoreOrder:false
